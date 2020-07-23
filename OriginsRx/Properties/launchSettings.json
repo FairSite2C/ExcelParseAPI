@@ -1,0 +1,25 @@
+/*
+You CAN host multiple SSL sites on port 443. 
+you can use whatever ports you want. 
+The disadvantage will be that users will have to include the port 
+number in the URL
+*/
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:1776",
+      "sslPort": 1215
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
